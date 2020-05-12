@@ -1,0 +1,59 @@
+/*
+    小程序中无需引入reset
+*/
+/*
+    @import "./reset.scss";
+*/
+@import "./base.scss";
+@import "./icon.scss";
+
+$baseurl: 'https://h5.putao.com/mini_cityshop';
+//$baseurl: 'https://dev-fe.putao.com/mini_cityshop';
+
+@function rpx($value) {
+  @return $value * 2rpx;
+}
+
+.navigator-hover {
+  opacity: 0.7;
+}
+
+@mixin font-color {
+  text-shadow: 4px 0px 10px #453d8b, -6px 0px 10px #453d8b, 0px 6px 10px #453d8b,
+    0px -6px 10px #453d8b, 20px 20px 80px #453d8b;
+  font-weight: bold;
+}
+
+page {
+  display: inline;
+  height: 100vh;
+  font-family: PingFangSC-Regular;
+}
+
+.no-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.btn_common {
+  width: 380px;
+  height: 80px;
+  background-image: linear-gradient(-126deg, #d03c50 0%, #e23e48 100%);
+  box-shadow: 0 32px 30px -14px rgba(224, 64, 82, 0.42);
+  border-radius: 80px;
+  font-size: 30px;
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 80px;
+  &.disabled {
+    background-image: linear-gradient(-126deg, #cdcdcd 0%, #e3e3e3 100%);
+    box-shadow: 0 16px 15px -7px rgba(209, 209, 209, 0.33);
+    border-radius: 40px;
+    color: #ffffff;
+  }
+}
