@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*
+    小程序中无需引入reset
+*/
+/*
+    @import "./reset.scss";
+*/
+/*
+    主题色样式
+*/
+html {
+  line-height: 1;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background: #fff;
+  color: #000;
+  font-size: 14rpx; }
+.ib {
+  display: inline-block; }
+button:after {
+  border: 0;
+  outline: none; }
+/*
+    iconfont图标配置
+*/
+.navigator-hover {
+  opacity: 0.7; }
+page {
+  display: inline;
+  height: 100vh;
+  font-family: PingFangSC-Regular; }
+.no-ellipsis {
+  overflow: hidden;
+  white-space: nowrap; }
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+.btn_common {
+  width: 380rpx;
+  height: 80rpx;
+  background-image: linear-gradient(-126deg, #d03c50 0%, #e23e48 100%);
+  box-shadow: 0 32rpx 30rpx -14rpx rgba(224, 64, 82, 0.42);
+  border-radius: 80rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+  letter-spacing: 3rpx;
+  text-align: center;
+  line-height: 80rpx; }
+.btn_common.disabled {
+    background-image: linear-gradient(-126deg, #cdcdcd 0%, #e3e3e3 100%);
+    box-shadow: 0 16rpx 15rpx -7rpx rgba(209, 209, 209, 0.33);
+    border-radius: 40rpx;
+    color: #ffffff; }
+.undata_box {
+  width: 100vw;
+  height: calc(100vh - 128rpx);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+.undata_box .icon_undata {
+    width: 216rpx;
+    height: 272rpx; }
+.checkBox {
+  width: 64rpx;
+  height: 64rpx;
+  box-sizing: border-box;
+  display: inline-block;
+  background-size: 40rpx 40rpx;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("https://h5.putao.com/mini_cityshop/btn/check_circular_nor@2x.png"); }
+.checkBox.checked {
+    background-image: url("https://h5.putao.com/mini_cityshop/btn/check_circular_sel@2x.png"); }
+.checkBox.disable {
+    background-image: url("https://h5.putao.com/mini_cityshop/btn/check_circular_dis@2x.png"); }
+.btn {
+  width: 130rpx;
+  height: 56rpx;
+  line-height: 48rpx;
+  background: #f92549;
+  box-sizing: border-box;
+  border: 4rpx solid #ffffff;
+  box-shadow: 0 8rpx 16rpx 0 rgba(207, 10, 44, 0.25);
+  border-radius: 36rpx;
+  font-size: 32rpx;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  text-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.25); }
+.btn.disable {
+    background: #c2c2c2;
+    box-shadow: unset; }
+.btn-icon2 {
+  padding: 0 32rpx;
+  height: 72rpx;
+  line-height: 64rpx;
+  background-color: #ffecee;
+  border: 4rpx solid #ffffff;
+  box-shadow: 0 8rpx 16rpx 0 rgba(249, 37, 73, 0.25);
+  border-radius: 44rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  color: #f82045;
+  background-repeat: no-repeat;
+  background-position: left 32rpx center;
+  background-size: 32rpx;
+  padding-left: 80rpx; }
+.btn-icon1 {
+  padding: 0 32rpx;
+  height: 72rpx;
+  line-height: 64rpx;
+  background-color: #f92549;
+  border: 4rpx solid #ffffff;
+  box-shadow: 0 8rpx 16rpx 0 rgba(249, 37, 73, 0.25);
+  border-radius: 44rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: left 32rpx center;
+  background-size: 32rpx;
+  padding-left: 80rpx; }

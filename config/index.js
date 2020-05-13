@@ -1,12 +1,18 @@
-const outputRootStrtegy = {
-  h5: 'dist_h5',
-  weapp: 'dist_weapp',
-  alipay: 'dist_alipay',
-  swan: 'dist_swan',
-  undefined: 'dist'
-}
-const env = JSON.parse(process.env.npm_config_argv)['cooked'][1].split(':')[1]
-const outputRoot = outputRootStrtegy[env]
+// const outputRootStrtegy = {
+//   h5: 'dist_h5',
+//   weapp: 'dist_weapp',
+//   alipay: 'dist_alipay',
+//   swan: 'dist_swan',
+//   undefined: 'dist'
+// }
+// console.log('测试测试测试' + process.env.npm_config_argv)
+// const env = JSON.parse(process.env.npm_config_argv || '')['cooked'][1].split(
+//   ':'
+// )[1]
+// const outputRoot = outputRootStrtegy[env]
+
+// eslint-disable-next-line import/no-commonjs
+const path = require('path')
 
 const config = {
   projectName: 'mini_cityshop',
@@ -17,25 +23,45 @@ const config = {
     '750': 1,
     '828': 1.81 / 2
   },
-  sourceRoot: 'dist',
-  outputRoot: outputRoot,
-  plugins: {
-    babel: {
-      sourceMap: true,
-      presets: [
-        [
-          'env',
-          {
-            modules: false
-          }
-        ]
-      ],
-      plugins: [
-        'transform-decorators-legacy',
-        'transform-class-properties',
-        'transform-object-rest-spread'
+  sourceRoot: 'src',
+  // outputRoot: outputRoot,
+  outputRoot: 'dist',
+  alias: {
+    '@': path.resolve(__dirname, '..', 'src')
+  },
+  // plugins: {
+  //   babel: {
+  //     sourceMap: true,
+  //     presets: [
+  //       [
+  //         'env',
+  //         {
+  //           modules: false
+  //         }
+  //       ]
+  //     ],
+  //     plugins: [
+  //       'transform-decorators-legacy',
+  //       'transform-class-properties',
+  //       'transform-object-rest-spread'
+  //     ]
+  //   }
+  // },
+  babel: {
+    sourceMap: true,
+    presets: [
+      [
+        'env',
+        {
+          modules: false
+        }
       ]
-    }
+    ],
+    plugins: [
+      'transform-class-properties',
+      'transform-decorators-legacy',
+      'transform-object-rest-spread'
+    ]
   },
   defineConstants: {},
   copy: {

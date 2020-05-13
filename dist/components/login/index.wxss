@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/*
+    小程序中无需引入reset
+*/
+/*
+    @import "./reset.scss";
+*/
+/*
+    主题色样式
+*/
+html {
+  line-height: 1;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background: #fff;
+  color: #000;
+  font-size: 14rpx; }
+.ib {
+  display: inline-block; }
+button:after {
+  border: 0;
+  outline: none; }
+/*
+    iconfont图标配置
+*/
+.navigator-hover {
+  opacity: 0.7; }
+page {
+  display: inline;
+  height: 100vh;
+  font-family: PingFangSC-Regular; }
+.no-ellipsis {
+  overflow: hidden;
+  white-space: nowrap; }
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+.btn_common {
+  width: 380rpx;
+  height: 80rpx;
+  background-image: linear-gradient(-126deg, #d03c50 0%, #e23e48 100%);
+  box-shadow: 0 32rpx 30rpx -14rpx rgba(224, 64, 82, 0.42);
+  border-radius: 80rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+  letter-spacing: 3rpx;
+  text-align: center;
+  line-height: 80rpx; }
+.btn_common.disabled {
+    background-image: linear-gradient(-126deg, #cdcdcd 0%, #e3e3e3 100%);
+    box-shadow: 0 16rpx 15rpx -7rpx rgba(209, 209, 209, 0.33);
+    border-radius: 40rpx;
+    color: #ffffff; }
+.bind-phone-page {
+  position: absolute;
+  top: 0;
+  display: block;
+  font-family: PingFangSC-Medium;
+  z-index: 1000000;
+  width: 100vw;
+  height: 100vh; }
+.bind-phone-page .mask-box {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); }
+.bind-phone-page .btn-close {
+    position: absolute;
+    top: calc(50vh - 270rpx - 112rpx);
+    right: 32rpx;
+    width: 144rpx;
+    height: 112rpx; }
+.bind-phone-page .input-container {
+    position: absolute;
+    top: calc(50vh - 270rpx);
+    width: 680rpx;
+    background-color: white;
+    margin: 0 32rpx;
+    height: 540rpx;
+    border-radius: 30rpx; }
+.bind-phone-page .input-container .inputs-area {
+      padding-top: 100rpx; }
+.bind-phone-page .input-container .inputs-area .input {
+        height: 96rpx;
+        line-height: 96rpx;
+        background: #f5f5f5;
+        border: 4rpx solid #ffffff;
+        border-radius: 52rpx;
+        margin: 0 48rpx;
+        display: flex;
+        align-items: center; }
+.bind-phone-page .input-container .inputs-area .input .input-icon-area {
+          flex: 96rpx;
+          font-size: 0;
+          text-align: center; }
+.bind-phone-page .input-container .inputs-area .input .input-icon-area .input-icon {
+            width: 64rpx;
+            height: 64rpx;
+            vertical-align: middle; }
+.bind-phone-page .input-container .inputs-area .input .input-main {
+          flex: 494rpx;
+          height: 96rpx;
+          line-height: 96rpx;
+          font-size: 32rpx;
+          color: #646464; }
+.bind-phone-page .input-container .inputs-area .phone.checked,
+      .bind-phone-page .input-container .inputs-area .code.checked {
+        background: #ffffff;
+        border: 4rpx solid #f92549;
+        box-shadow: 0 8rpx 16rpx 0 rgba(207, 10, 44, 0.25);
+        border-radius: 52rpx; }
+.bind-phone-page .input-container .inputs-area .code .input-main {
+        letter-spacing: 16rpx; }
+.bind-phone-page .input-container .inputs-area .get-code-area {
+        height: 76rpx;
+        line-height: 76rpx;
+        display: flex; }
+.bind-phone-page .input-container .inputs-area .get-code-area .left-empty {
+          flex: 1; }
+.bind-phone-page .input-container .inputs-area .get-code-area .get-code-btn {
+          text-align: right;
+          display: flex;
+          align-items: center;
+          margin: 0 60rpx 0 auto; }
+.bind-phone-page .input-container .inputs-area .get-code-area .get-code-btn .get-code-icon {
+            width: 32rpx;
+            height: 32rpx; }
+.bind-phone-page .input-container .inputs-area .get-code-area .get-code-btn .get-code-text {
+            font-family: FZY4JW--GB1-0;
+            font-size: 24rpx;
+            color: #f82045;
+            letter-spacing: 0;
+            text-align: right;
+            padding-left: 16rpx; }
+.bind-phone-page .input-container .inputs-area .get-code-area .get-code-btn.lock .get-code-text {
+            color: #959595; }
+.bind-phone-page .input-container .next-btn {
+      left: calc(50vw - 124rpx);
+      width: 248rpx;
+      height: 90rpx;
+      line-height: 90rpx;
+      border: 4rpx solid #ffffff;
+      background: #f92549;
+      border-radius: 50rpx;
+      margin-top: 20rpx;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: 20px; }
+.bind-phone-page .input-container .next-btn .btn-left {
+        margin-left: 30rpx;
+        flex: 0.5;
+        display: flex;
+        align-self: center; }
+.bind-phone-page .input-container .next-btn .btn-left .icon-img {
+          width: 40rpx;
+          height: 40rpx; }
+.bind-phone-page .input-container .next-btn .btn-right {
+        flex: 1;
+        font-size: 32rpx;
+        color: #ffffff; }
+.bind-phone-page .input-container .next-btn.lock {
+        background: #c2c2c2; }

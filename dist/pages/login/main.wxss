@@ -1,0 +1,7 @@
+.btnnn {
+  position: fixed;
+  top: 50%;
+  transition: translateY(-50%);
+  left: 125rpx;
+  width: 500rpx;
+  background-color: aquamarine; }

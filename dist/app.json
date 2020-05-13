@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/login/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat"
+  },
+  "sitemapLocation": "sitemap.json"
+}

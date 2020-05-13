@@ -1,0 +1,6 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="cart_container">
+        <login id="bzzzz" compid="{{$compid__1}}"></login>
+        <button class="btnnn" bindtap="checkLogin">登录</button>
+    </view>
+</block>
